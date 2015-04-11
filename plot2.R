@@ -1,7 +1,5 @@
 ## Load data.table library
 library(data.table)
-library(chron)
-library(ggplot2)
 
 DT <- fread("household_power_consumption.txt", na.strings = "?")
 DT <- DT[,Datetype := as.Date(Date, "%d/%m/%Y")]
